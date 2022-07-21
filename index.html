@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Haccckkkkkedd By IN CRUST WE RUSH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="incrustwerush.org - Science, Social, Technology, and BrotherHood">
+    <meta name="keywords" content="incrustwerush.org, Science, Social, Technology, and BrotherHood" />
+    <link rel="icon" href="https://incrustwerush.org/icon.ico" />
+    <style>
+        html {
+
+            margin: 0 auto;
+            background-color: white;
+            font-family: monospace;
+
+        }
+        
+        a {
+
+            text-decoration: underline;
+            color: black;
+
+        }
+
+        a:hover {
+
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div style="padding: 20px;">
+    
+        <div style="margin-bottom: 20px; text-align: center;">
+            <div style="margin-bottom: 20;">
+                <img src="https://incrustwerush.org/logo.png" style="height: 200px;" />
+            </div>
+            <div style="margin-bottom: 5px; font-size: 20px; font-weight: bold;">
+                Haccckkkkkedd By IN CRUST WE RUSH
+            </div>
+            <div style="font-size: 10px; text-decoration: underline;">
+                Science, Social, Technology, and BrotherHood 
+            </div>
+        </div>
+    
+        <div style="margin-bottom: 20px; text-align: center;">
+            <div style="margin-bottom: 20px; text-align: center;">
+                <div style="font-size: 10px; font-style: italic; margin-bottom: 20px;">
+                    <span id="quotes">" The declination of sanity in the semi-black age that comes with a desire for praxis, along with the darkness creeping softly. Wielding a crowd of angry worshipers in the depths of the bottom of the trough of imagination. Half peaceful, half ironic, and half passionately dancing. " - incrustwerush.org</span>
+                </div>
+            </div>
+        </div>
+   
+    
+        <div style="text-align: center; font-size: 10px; color: black;">
+            Copyright &copy;<span id="year"></span> R&D ICWR - All rights reserved.
+        </div>
+
+    </div>
+
+    <script>
+        const date = new Date();
+        let year = date.getFullYear();
+
+        document.getElementById("year").innerHTML = year;
+
+        // Typing Animation
+
+        function typing(elementID, text)
+        {
+
+            if (document.getElementById(elementID).innerHTML == null) {
+
+                document.getElementById(elementID).innerHTML = text;
+
+            } else {
+
+                document.getElementById(elementID).innerHTML += text;
+
+            }
+
+        }
+
+        function typer(elementID, speed)
+        {
+
+            var text = document.getElementById(elementID).innerHTML;
+
+            document.getElementById(elementID).innerHTML = "";
+
+            i = 0;
+
+            setInterval(function() {
+                
+                if (i < text.length) {
+
+                    typing(elementID, text.charAt(i));
+                    i++;
+
+                }
+
+            }, speed);
+
+        }
+
+        var elementID = "quotes";
+        var speed = 100;
+
+        typer(elementID, speed);
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"72e26d4dec77919b","version":"2022.6.0","r":1,"token":"e9461ba5749d461881967076c6a33378","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
